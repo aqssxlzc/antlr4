@@ -1,4 +1,5 @@
 FROM ubuntu
+RUN apt-get intall -y wget
 RUN mkdir -p /usr/java
 RUN wget -O java.tar.gz http://download.oracle.com/otn-pub/java/jdk/8u40-b25/jdk-8u40-linux-x64.tar.gz --header "Cookie: oraclelicense=accept-securebackup-cookie"
 RUN ls 
