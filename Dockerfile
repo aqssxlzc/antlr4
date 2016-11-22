@@ -10,8 +10,7 @@ ENV JAVA_HOME /usr/java/jdk1.8.0_40
 ENV PATH $PATH:$JAVA_HOME/bin
 WORKDIR /usr/local/lib
 RUN mkdir -p /usr/java/lib
-RUN wget http://www.antlr.org/download/antlr-4.5.3-complete.jar
-RUN cp antlr-4.5.3-complete.jar /usr/local/lib
+RUN wget http://www.antlr.org/download/antlr-4.5.3-complete.jar /usr/local/lib
 RUN echo '#!/bin/bash\njava -jar /usr/local/lib/antlr-4.5.3-complete.jar' > /usr/bin/antlr4
 RUN chmod +x /usr/bin/antlr4
 RUN echo '#!/bin/bash\njava org.antlr.v4.gui.TestRig' > /usr/bin/grun
