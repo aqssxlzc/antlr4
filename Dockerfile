@@ -8,5 +8,5 @@ ADD files/antlr4.sh /usr/bin/antlr4
 RUN chmod +x /usr/bin/antlr4
 ADD files/grun.sh /usr/bin/grun
 RUN chmod +x /usr/bin/grun
-ENV CLASSPATH .:/usr/local/lib/antlr-4.5.3-complete.jar:$CLASSPATH
+ENV CLASSPATH .:/usr/local/lib/antlr-4.7.2-complete.jar:$CLASSPATH
 
