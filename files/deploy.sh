@@ -9,5 +9,5 @@ while (( "$#" )); do
 	esac
 done
 mkdir -p ${OUTPUT_DIRECTORY}
-unzip -d ${OUTPUT_DIRECTORY} /usr/local/lib/antlr4-cpp-runtime-*-source.zip
+yes | unzip -d ${OUTPUT_DIRECTORY} /usr/local/lib/antlr4-cpp-runtime-*-source.zip
 
