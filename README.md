@@ -6,7 +6,7 @@ The usual way of running this is as follows:
 $ docker run -v `pwd`:`pwd` -w `pwd` -u `id -u`:`id -g` <tagged-container-name> antlr4 <antlr options>
 ```
 
-so, if you're using the version maintained by Vlinder Software/rlc, the <tagged-container-name> would be vlinder/antlr4:
+so, if you're using the version maintained by Vlinder Software/rlc, the `<tagged-container-name>` would be vlinder/antlr4:
 
 ```
 $ docker run -v `pwd`:`pwd` -w `pwd` -u `id -u`:`id -g` vlinder/antlr4 antlr4 <antlr options>
